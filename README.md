@@ -1,41 +1,40 @@
-# E-Commerce Customer Segmentation Dashboard - RFM Analysis
+# HR Attrition Dashboard | Power BI
 
-## Project Overview
-* This project performs customer segmentation for an e-commerce business using RFM Analysis to differentiate between Regular and Lost customers.
+### Analyzing Workforce Attrition: OverTime, Department & Demographic Insights from 1.47K Employees
 
-## Dataset Used
-Originally 4 tables were available, but only 2 tables were used for final analysis as they were sufficient:
+## 📌 Project Overview
+* This project analyzes employee attrition data of 1,470 employees to uncover why employees leave the organization. The interactive Power BI dashboard highlights key factors like OverTime, Department, Age Group, and Job Role.
 
-1.  **Orders Table** - Used for Recency & Frequency calculation (Customer ID, Order Date)
-2.  **Payments Table** - Used for Monetary calculation & Total Revenue (Customer ID, Payment Value)
+## 🎯 Business Problem
+- Overall attrition rate is **16.1% (237 employees)**
+- Goal is to identify the root causes of attrition to improve retention.
 
-Remaining 2 unused tables were removed from the Power BI model to optimize performance and keep the dashboard clean.
+## 📊 Dashboard Includes
+- **KPI Cards:** Total Employees, Attrition Count, Attrition Rate
+- **Attrition by Department:** R&D (56%) has highest attrition
+- **OverTime Impact:** 53.6% of employees who left did OverTime
+- **Age Group Analysis:** 25-34 age group most vulnerable
+- **Job Role & Gender wise Attrition**
 
-## Key Insights from Dashboard
-- Total Customers: 99.44K
-- Total Revenue: $16.01M
-- Lost Customers: 90K (90.48% of base) - Main contributor to historical revenue
-- Regular Customers: Only 1K (1.14%) - Generating $182.28K
-- Major Churn Identified - Business needs to focus on re-engagement.
+## 💡 Key Insights
+1. **OverTime is the #1 reason:** Employees doing OverTime are 2x more likely to leave.
+2. **Department:** R&D department accounts for 56.1% of total attrition.
+3. **Age Factor:** Young professionals (25-34) show highest attrition rate.
+4. **Work-Life Balance:** Single employees have higher attrition.
 
-## RFM Logic
-- **Recency:** Calculated from Orders table (Last Order Date)
-- **Frequency:** Count of Orders per Customer
-- **Monetary:** Sum of Payment Value from Payments table
+## 🛠️ Tech Stack
+- **Tool:** Power BI Desktop
+- **Data Cleaning:** Power Query
+- **DAX:** Calculated Measures for Attrition Rate
+- **Dataset:** IBM HR Analytics (1.47K records)
 
-## Dashboard Features
-- KPI Card 1: Count of customer_id
-- KPI Card 2: Sum of Monetary (Total Revenue)
-- Bar Chart: Customer Count by Segment
-- Donut Chart: Revenue by Segment
+## 📁 Files in this Repo
+- `HR_Employee_Attrition.csv` - Dataset
+- `HR Attrition Dashboard.pbix` - Power BI File
+- `dashboard-screenshot.png` - Dashboard Preview
 
-## Tech Stack
-- Power BI Desktop
-- Data Modeling (Relationship between Orders & Payments)
-- DAX
-
-## How to Run
-1. Download .pbix file
+## 🚀 How to Use
+1. Download the `.pbix` file
 2. Open in Power BI Desktop
-3. Data model contains only Orders & Payments tables.
+3. Refresh the data if needed
 
